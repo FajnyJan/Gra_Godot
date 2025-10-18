@@ -39,6 +39,7 @@ func _process(delta: float) -> void:
 	
 
 
+
 func _on_body_entered(body: Node2D) -> void:
 	hide() # Player disappears after being hit.
 	hit.emit()
