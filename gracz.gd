@@ -4,8 +4,8 @@ signal hit
 var screen_size = Vector2(1152, 600)
 
 # Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	hide()
+#func _ready() -> void:
+	#hide()
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -40,7 +40,7 @@ func _process(delta: float) -> void:
 
 
 
-func _on_body_entered(body: Node2D) -> void:
+func _on_body_entered(_body: Node2D) -> void:
 	hide() # Player disappears after being hit.
 	hit.emit()
 	# Must be deferred as we can't change physics properties on a physics callback.
