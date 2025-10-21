@@ -8,6 +8,7 @@ var screen_size = Vector2(1152, 600)
 	#hide()
 
 #ssssssssss
+#ppppp
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
